@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliente Existente</title>
+  <link rel="stylesheet" href="../CSS/registro.css">
+</head>
+<body>
+
+<header class="hero">
+   <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <img src="../Imagenes/logo-sf.png" class="logo">
+       <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+      <a href="Servicios.html"><i class="fa-solid fa-store"></i>Servicios</a>
+      <a href="Citas.html"><i class="fa-solid fa-cart-shopping"></i>Citas</a>
+      <a href="Articulos.html"><i class="fa-solid fa-paw"></i>Articulos</a>   
+      <a></a>
+  </nav>
+</header>
+
+<main class="profile-container">
+  <div class="profile-card">
+    <h2>Completa tus datos</h2>
+
+    <form method="post" action="../cliente/cuenta_cliente.php">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="apellido_p">Apellido Paterno:</label>
+      <input type="text" id="apellido_p" name="apellido_p" required>
+
+      <label for="apellido_M">Apellido Materno:</label>
+      <input type="text" id="apellido_M" name="apellido_M" required>
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="contraseña">Contraseña:</label>
+      <input type="password" id="contraseña" name="contraseña" required>
+
+      <button type="submit">Confirmar</button>
+    </form>
+  </div>
+</main>
+
+
+<div class="regresar">
+ <a href="Registro.html">Regresar</a>
+</div>
+
+<footer>
+  <p>&copy; 2025 Veterinaria Super Pets</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+</script>
+</body>
+</html>

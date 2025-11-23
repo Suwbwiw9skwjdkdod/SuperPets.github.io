@@ -1,0 +1,207 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #490082;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background-color: #40E0D0;
+  border-radius: 10px;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Contenedor principal */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Tarjeta del formulario */
+.profile-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px; /* Más ancho para acomodar todos los campos */
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #490082;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Botones */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  width: 48%;
+}
+
+input[type="submit"] {
+    margin-left: 26%;
+    margin-top: 5%;
+  position: flex;
+  background-color: #003386;
+}
+
+input[type="submit"]:hover {
+  background-color: #40E0D0;
+}
+
+input[type="reset"] {
+  margin-left: 26%;
+  background-color: #ff4d4d;
+}
+
+input[type="reset"]:hover {
+  background-color: #e60000;
+}
+
+
+/* Estilo general para botones */
+
+
+/* Botón Actualizar */
+.btn-actualizar {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.btn-actualizar:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+/* Botón Eliminar */
+.btn-eliminar {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+.btn-eliminar:hover {
+    background-color: #d32f2f; /* Rojo más oscuro */
+}
+form button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+
+/* Enlace regresar */
+.regresar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.regresar a {
+  color: #003386;
+  text-decoration: none;
+  font-size: 14px;
+}
+.regresar a:hover{
+  color:#40E0D0;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .profile-card {
+    padding: 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+  }
+}

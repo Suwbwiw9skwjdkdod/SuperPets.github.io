@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Pet</title>
+ <link rel="stylesheet" href="../CSS/BarraNav.css">
+ <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+
+
+<header class="hero">
+  <nav class="navbar">
+
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <img src="../Imagenes/logo-sf.png" class="logo">
+     <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+      <a href="Citas.html"><i class="fa-solid fa-cart-shopping"></i>Citas</a>
+      <a href="Articulos.html"><i class="fa-solid fa-paw"></i>Articulos</a>   
+      <a></a>
+      <a></a>
+      <a href="sesion.html"><i class="fa-solid fa-user"></i>Inciar Sesion</a>
+  </nav>
+</header>
+
+<section class="pets">
+  <h2>Servicios</h2>
+  <p>¡Conoce todos los servicios que ofrecemos en SuperPets!</p>
+  <div class="pet-grid">
+    <div class="pet-card"><img src="../Imagenes/vacunacion.jpg"><p>Servicio de vacunacion</p></div>
+    <div class="pet-card"><img src="../Imagenes/desparasitacion.jpg"><p>Desparacitacion de mascotas</p></div>
+     <div class="pet-card"><img src="../Imagenes/cremacion.jpg"><p>Servicio de cremacion</p></div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+
+<footer>
+
+      <p>&copy; 2025 Veterinaria Super Pets</p>
+   <p>Ramirez San Martin Angeles Valeria, Rositas Santiago Evelyn Johana</p>
+    
+  
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+</script>
+</body>
+</html>

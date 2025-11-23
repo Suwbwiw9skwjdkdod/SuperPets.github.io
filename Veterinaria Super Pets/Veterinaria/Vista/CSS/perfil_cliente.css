@@ -1,0 +1,169 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #003366;
+  flex-wrap: wrap;
+}
+
+.navbar img {
+  width: 80px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background-color: #40E0D0;
+  border-radius: 10px;
+}
+
+/* MENU ICON */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f0f0f0;
+}
+
+.hero h1 {
+  font-size: 28px;
+  color: #003366;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+/* TARJETA DE PERFIL */
+.profile-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  color: #490082;
+  margin-bottom: 10px;
+}
+
+.profile-card p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+/* SECCIÓN MASCOTAS */
+.mascotas-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.mascotas-card h3 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.mascotas-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mascotas-card li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profile-card, .mascotas-card {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #003366;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+    .menu-icon {
+    display: block;
+    color: white;
+  }
+}

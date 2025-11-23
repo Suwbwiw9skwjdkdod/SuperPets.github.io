@@ -1,0 +1,161 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #490082;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background-color: #40E0D0;
+  border-radius: 8px;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #490082;
+}
+
+/* Contenedor principal */
+.formulario {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Formulario general */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #490082;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Botones */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* Botón Buscar */
+button[name="buscar"] {
+  background-color: #003386;
+}
+
+button[name="buscar"]:hover {
+  background-color: #40E0D0;
+}
+
+/* Botón Actualizar */
+button[name="actualizar"] {
+  background-color: #4CAF50;
+}
+
+button[name="actualizar"]:hover {
+  background-color: #45a049;
+}
+
+/* Botón Eliminar */
+button[name="eliminar"] {
+  background-color: #f44336;
+}
+
+button[name="eliminar"]:hover {
+  background-color: #d32f2f;
+}
+
+/* Enlace Regresar */
+.regresar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.regresar a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #FF9800;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.regresar a:hover {
+  background-color: #e68900;
+}
+
+/* Mensajes */
+p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}

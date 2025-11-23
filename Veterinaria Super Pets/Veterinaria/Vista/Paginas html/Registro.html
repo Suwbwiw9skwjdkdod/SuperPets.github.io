@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="stylesheet" href="../CSS/registro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header class="hero">
+   <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <img src="../Imagenes/logo-sf.png" class="logo">
+       <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+      <a href="Servicios.html"><i class="fa-solid fa-store"></i>Servicios</a>
+      <a href="Citas.html"><i class="fa-solid fa-cart-shopping"></i>Citas</a>
+      <a href="Articulos.html"><i class="fa-solid fa-paw"></i>Articulos</a>   
+      <a></a>
+  </nav>
+</header>
+
+<main class="profile-container">
+  <div class="profile-card">
+    <h1>Registro</h1>
+    <p>¿Ya eres cliente de la veterinaria?</p>
+
+    <a href="form_cliente.html"><button>Sí</button></a>
+    <a href="form_nuevo.html"><button>No</button></a>
+  </div>
+</main>
+<div class="regresar">
+ <a href="sesion.html">Regresar</a>
+</div>
+<footer>
+  <p>&copy; 2025 Veterinaria Super Pets</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+</script>
+</body>
+</html>

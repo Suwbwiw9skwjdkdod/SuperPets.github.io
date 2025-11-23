@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Pet</title>
+ <link rel="stylesheet" href="../Vista/CSS/index.css">
+ <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+
+<!-- HEADER HERO -->
+<header class="hero">
+  <nav class="navbar">
+
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+<img src="../Vista/Imagenes/logo-sf.png" class="logo">
+      <a href="../Vista/Paginas html/Servicios.html"><i class="fa-solid fa-store"></i>Servicios</a>
+      <a href="../Vista/Paginas html/Citas.html"><i class="fa-solid fa-cart-shopping"></i>Citas</a>
+      <a href="../Vista/Paginas html/Articulos.html"><i class="fa-solid fa-paw"></i>Articulos</a>   
+      <a></a>
+      <a></a>
+      <a href="../Vista/Paginas html/sesion.html"><i class="fa-solid fa-user"></i>Inciar Sesion</a>
+      <a></a>
+  </nav>
+</header>
+<div>
+ <img src="../Vista/Imagenes/sanivet-intro-1.jpg" class="banner"> 
+</div>
+
+<!-- ACTION CARDS -->
+<section class="actions">
+  <div class="action-card">
+    <i class="fas fa-heart"></i>
+    <p>Adota a una mascota</p>
+  </div>
+  <div class="action-card">
+    <i class="fas fa-hands-helping"></i>
+    <p>Se voluntario</p>
+  </div>
+  <div class="action-card">
+    <i class="fas fa-donate"></i>
+    <p>Dona para ellos</p>
+  </div>
+</section>
+
+<!-- PET LIST -->
+<section class="pets">
+  <h2>Servicios</h2>
+  <p>¡Conoce todos los servicios que ofrecemos en SuperPets!</p>
+  <div class="pet-grid">
+    <div class="pet-card"><img src="Imagenes/vacunacion.jpg"><p>Servicio de vacunacion</p></div>
+    <div class="pet-card"><img src="Imagenes/desparasitacion.jpg"><p>Desparacitacion de mascotas</p></div>
+    <div class="pet-card"><img src="Imagenes/citas.jpeg"><p>Citas</p></div>
+    <div class="pet-card"><img src="Imagenes/estetica.jpg"><p>Estetica para mascotas</p></div>
+    <div class="pet-card"><img src="Imagenes/cremacion.jpg"><p>Servicio de cremacion</p></div>
+    <div class="pet-card"><img src="Imagenes/productos.png"><p>Productos para mascotas</p></div>
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<footer>
+
+      <p>&copy; 2025 Veterinaria Super Pets</p>
+   <p>Ramirez San Martin Angeles Valeria, Rositas Santiago Evelyn Johana</p>
+    
+  
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>

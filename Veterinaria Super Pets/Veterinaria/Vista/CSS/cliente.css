@@ -1,0 +1,148 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #003366;
+  color: white;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-size: 1.5vw;
+}
+
+
+
+.hero img {
+  width: 7vw;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  padding: 2%;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.nav-links a:hover {
+  color: #40E0D0;
+}
+
+/* MENU ICON */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ================================
+   FORMULARIO EDITAR CLIENTE
+================================ */
+form {
+    background-color: white;
+    width: 430px;
+    margin: 45px auto;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 14px rgba(0,0,0,0.18);
+    display: flex;
+    flex-direction: column;
+    border-top: 6px solid #7E4CCB;
+}
+
+label {
+    font-weight: bold;
+    color: #4A2C70;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+input {
+    padding: 12px;
+    margin-top: 6px;
+    border: 2px solid #C4A6E8;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #7E4CCB;
+    outline: none;
+}
+
+button {
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    font-size: 17px;
+    border-radius: 10px;
+    background-color: #7E4CCB;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #5B33A3;
+}
+
+.regresar a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #7E4CCB;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.regresar a:hover {
+  color: #5B33A3;
+}
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 15px;
+  background-color: #003366;
+  color: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #003366;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+}

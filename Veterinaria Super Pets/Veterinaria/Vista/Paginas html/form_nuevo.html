@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuevo Cliente</title>
+  <link rel="stylesheet" href="../CSS/registro.css">
+</head>
+<body>
+
+<header class="hero">
+   <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <img src="../Imagenes/logo-sf.png" class="logo">
+       <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+      <a href="Servicios.html"><i class="fa-solid fa-store"></i>Servicios</a>
+      <a href="Citas.html"><i class="fa-solid fa-cart-shopping"></i>Citas</a>
+      <a href="Articulos.html"><i class="fa-solid fa-paw"></i>Articulos</a>   
+      <a></a>
+  </nav>
+</header>
+
+<main class="profile-container">
+  <div class="profile-card">
+    <h2>Registra tus datos</h2>
+
+    <form method="post" action="../codigos php/guardar_cliente.php">
+
+      <label for="nombre_n">Nombre:</label>
+      <input type="text" id="nombre_n" name="nombre" required>
+
+      <label for="apellido_p_n">Apellido Paterno:</label>
+      <input type="text" id="apellido_p_n" name="apellido_p" required>
+
+      <label for="apellido_M_n">Apellido Materno:</label>
+      <input type="text" id="apellido_M_n" name="apellido_M" required>
+
+      <label for="correo_n">Correo:</label>
+      <input type="email" id="correo_n" name="correo" required>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" name="telefono" required>
+
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion" required>
+
+      <label for="contraseña_n">Contraseña:</label>
+      <input type="password" id="contraseña_n" name="contraseña" required>
+
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+</main>
+<div class="regresar">
+ <a href="Registro.html">Regresar</a>
+</div>
+
+<footer>
+  <p>&copy; 2025 Veterinaria Super Pets</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+</script>
+</body>
+</html>

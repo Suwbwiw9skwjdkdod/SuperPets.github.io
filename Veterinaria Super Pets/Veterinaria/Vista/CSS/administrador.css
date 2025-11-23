@@ -1,0 +1,141 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #003366;
+  color: white;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  font-size: 1.5vw;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+  padding: 2%;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+    height: 90px;
+}
+
+.nav-links a:hover {
+  color: #40E0D0;
+}
+
+/* MENU ICON */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* PERFIL */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.profile-card {
+  background-color: white;
+  width: 320px;
+  padding: 25px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.profile-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+}
+
+.edit-btnit {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.edit-btnit i {
+  margin-right: 8px;
+}
+
+.regresar a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: #7E4CCB;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.regresar a:hover {
+  color: #5B33A3;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 15px;
+  background-color: #003366;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #003366;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    color: white;
+  }
+}

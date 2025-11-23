@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Administrador</title>
+
+  <!-- CSS SEPARADO -->
+  <link rel="stylesheet" href="../CSS/administrador.css">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">    
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <img src="../Imagenes/logo-sf.png" class="logo">
+
+    <div class="nav-links" id="menu">
+      <a href="../codigos php/mantener_cliente.php" target="_blank"><i class="fas fa-user"></i> Cliente</a>
+      <a href="../codigos php/mantener_servicio.php" target="_blank"><i class="fas fa-concierge-bell"></i> Servicios</a>
+      <a href="../codigos php/mantener_veterinario.php" target="_blank"><i class="fas fa-stethoscope"></i> Veterinarios</a>
+      <a href="../codigos php/mantener_empleado.php" target="_blank"><i class="fas fa-user-tie"></i> Empleados</a>
+      <a href="../codigos php/mantener_mascota.php" target="_blank"><i class="fa-solid fa-paw"></i> Mascotas</a>
+      <a href="sesion.html" target="_blank"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>¡Bienvenido al perfil de administrador!</h1>
+</section>
+
+
+
+<!-- PERFIL ADMIN -->
+<main class="profile-container">
+  <div class="profile-card">
+    <img src="../Imagenes/perfil.jpg" alt="Foto del cliente">
+    <h2>Laura Martínez</h2>
+    <p><strong>ID:</strong> CLT001</p>
+    <p><strong>Correo:</strong> laura.martinez@gmail.com</p>
+    <p><strong>Teléfono:</strong> 55 1122 3344</p>
+    <p><strong>Dirección:</strong> Calle Jardín #123, Chimalhuacán</p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2025 Veterinaria Super Pets</p>
+  <p>Ramirez San Martin Angeles Valeria, Rositas Santiago Evelyn Johana</p>
+</footer>
+
+
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>

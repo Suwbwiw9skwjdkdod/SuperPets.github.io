@@ -1,0 +1,184 @@
+
+/* --- Reset general --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* --- Navbar --- */
+.hero {
+  background: #003366;
+  padding: 15px 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar .logo {
+  height: 90px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* --- Contenedor principal --- */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.profile-card {
+  background: white;
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-card h1,
+.profile-card h2 {
+  margin-bottom: 15px;
+  color: #003366;
+}
+
+/* --- Botones de la primera página --- */
+.profile-card button {
+  background: #003366;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.profile-card button:hover {
+  background: #40E0D0;
+  transform: scale(1.05);
+}
+
+/* --- Formularios --- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+label {
+  text-align: left;
+  font-weight: bold;
+  color: #490082;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #003366;
+  outline: none;
+}
+
+
+/* Botón Regresar */
+.regresar {
+  display: inline-block;
+  background-color: #003366; /* Azul oscuro */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 20%;
+}
+.regresar a{
+    color: white;
+    text-decoration: none;
+}
+
+.regresar:hover {
+  background-color: #40E0D0; /* Turquesa al pasar el mouse */
+  color:white;
+  transform: scale(1.05);
+}
+
+
+/* Botón de los formularios */
+form button {
+  background: #003366;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #40E0D0;
+}
+
+/* --- Footer --- */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #003366;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .profile-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+}

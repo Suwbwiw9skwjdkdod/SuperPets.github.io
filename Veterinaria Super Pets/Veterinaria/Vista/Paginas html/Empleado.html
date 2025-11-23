@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Empleado</title>
+ <link rel="stylesheet" href="../CSS/agregar.css">
+ <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <img src="../Imagenes/logo-sf.png">
+
+    <div class="nav-links" id="menu">
+      <a href="../codigos php/mantener_cliente.php" target="_blank"><i class="fas fa-user"></i> Cliente</a>
+      <a href="../codigos php/mantener_servicio.php" target="_blank"><i class="fas fa-concierge-bell"></i> Servicios</a>
+      <a href="../codigos php/mantener_veterinario.php" target="_blank"><i class="fas fa-stethoscope"></i> Veterinarios</a>
+      <a href="../codigos php/mantener_empleado.php" target="_blank"><i class="fas fa-user-tie"></i> Empleados</a>
+      <a href="../codigos php/mantener_mascota.php" target="_blank"><i class="fa-solid fa-paw"></i> Mascotas</a>
+      <a href="sesion.html" target="_blank"><i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+    </div>
+  </nav>
+</header>
+<main class="profile-container">
+  <div class="profile-card">
+    <h1>Registrar Nuevo Empleado</h1>
+
+    <form method="post" action="../codigos php/guardar_empleados.php" >
+      
+        <label for="id">ID Empleado:</label>
+        <input type="text" id="id" name="id" placeholder="Ej. EMP001">
+     
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan ">
+   
+        <label for="apellido_p">Apellido Paterno:</label>
+        <input type="text" id="apellido_p" name="apellido_p" placeholder=" Ej. Pérez">
+      
+        <label for="apellido_M">Apellido Materno:</label>
+        <input type="text" id="apellido_M" name="apellido_M" placeholder="Ej. Pérez">
+      
+       <label for="puesto">Puesto:</label>
+<select id="puesto" name="puesto" required>
+    <option value="" disabled selected>Selecciona un puesto</option>
+    <option value="Recepcionista">Recepcionista</option>
+    <option value="Estilista">Estilista</option>
+</select>
+
+<label for="turno">Turno:</label>
+<select id="turno" name="turno" required>
+    <option value="" disabled selected>Selecciona un turno</option>
+    <option value="Matutino">Matutino</option>
+    <option value="Vespertino">Vespertino</option>
+    <option value="Nocturno">Nocturno</option>
+</select>
+    
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" placeholder=" Ej. juan.perez@superpets.com">
+   
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Ej. 55 9988 7766">
+    
+        <label for="fecha">Fecha de contratacion:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        
+    <input type="submit" name="guardar"></input>
+        <br>
+        <input type="reset">
+         <div class="regresar">
+            <a href="../codigos php/mantener_empleado.php"><i class="fas fa-arrow-left"></i> Regresar</a>
+
+    </form>
+
+  </div>
+</main>
+
+<footer>
+      <p>&copy; 2025 Veterinaria Super Pets</p>
+   <p>Ramirez San Martin Angeles Valeria, Rositas Santiago Evelyn Johana</p>
+    
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+  }
+
+</script>
+
+</body>
+</html>
